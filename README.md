@@ -23,6 +23,4 @@ __Short Term Goals__
 Roadmap at 
 We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce editable models.
 
-https://austencabretf21c.myportfolio.com/
-https://issuu.com/home/published/02.20.2021_portfolio_cabret-austen
-https://www.linkedin.com/in/austen-cabret-829647122/
+https://linktr.ee/AustenCabret
