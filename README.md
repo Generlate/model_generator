@@ -1,4 +1,4 @@
-![Ilblu Program Icon](https://user-images.githubusercontent.com/85384584/129769642-c36313c3-484b-4ccf-b9ca-854fddf8f01e.png)
+![Program Icon_2_without background](https://user-images.githubusercontent.com/85384584/129927770-c435b297-b794-4f83-9c1b-3c667d378583.png)
 EelBlue is a generative tool for architecture design, on windows. 
 
 __Getting Started__
