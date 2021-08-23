@@ -1,10 +1,12 @@
-EelBlue is a generative tool for architecture design, on windows.   
-
-
-<img src="https://user-images.githubusercontent.com/85384584/129927770-c435b297-b794-4f83-9c1b-3c667d378583.png" alt="https://user-images.githubusercontent.com/85384584/129927770-c435b297-b794-4f83-9c1b-3c667d378583.png" width="200"/> 
+<p align="center">
+  <img width="250" src="https://user-images.githubusercontent.com/85384584/129927770-c435b297-b794-4f83-9c1b-3c667d378583.png">
+</p>
+ 
+ 
+EelBlue is a generative tool for architecture design, on windows.  
 
 # Getting Started  
-Visual Studio 2019 is recommended, EelBlue is officially untested on other development environments whilst we focus on a Windows build.
+Visual Studio 2019 is recommended, EelBlue is untested on other development environments whilst we focus on a Windows build.
 1. Downloading the repository
 start by cloning the repository with 
 
