@@ -2,8 +2,9 @@
 
 
 
-## Table of Contents  
+#### Table of Contents  
 [Code of Conduct](#code-of-conduct)  
+
 [What should I know before getting started](#what-should-i-know-before-getting-started)
 
 * [EelBlue and Packages](#eelblue-and-packages)
