@@ -4,36 +4,7 @@ Hey! :wave:
 
 So - you want to contribute huh?...  
 Well, THANK YOU. EelBlue is making architectural design easier and any help is greatly appreciated!
-
-The following is a set of guidelines for contributing to EelBlue and its packages, which are hosted on the [EelBlue Page](https://github.com/EelBlue) on GitHub. These are mostly guidelines, not rules. Use your best judgement, and feel free to propose changes to this document in a pull request.
-
-#### Table of Contents  
-[Code of Conduct](#code-of-conduct)  
-
-[What should I know before getting started](#what-should-i-know-before-getting-started)
-
-* [EelBlue and Packages](#eelblue-and-packages)
-* [EelBlue Design Decisions](#eelblue-design-decisions)
-
-[How Can I Contribute](#how-can-i-contribute)
-
-* [Reporting Bugs](#reporting-bugs)
-* [Suggesting Enhancements](#suggesting-enhancements)
-* [Your First Code Contribution](#your-first-code-contribution)
-* [Pull Requests](#pull-requests)
-
-
-[Styleguides](#styleguides)
-
-* [Git Commit Messages](#git-commit-messages)
-* [JavaScript StyleGuide](#javascript-styleguide)
-* [CoffeeScript Styleguide](#coffeescript-styleguide)
-* [Specs Styleguide](#specs-styleguide)
-* [Documentation Styleguide](#documentation-styleguide)
-
-[Additional Notes](#additional-notes)
-
-* [Issues and Pull Request Labels](#issues-and-pull-request-labels)
+  
 
 
 
@@ -45,32 +16,75 @@ This project and everyone participating in it is governed by the EelBlue [Code o
 
 ### EelBlue and Packages
 
-To get a sense for the packages that are bundled with EelBlue, you can go to Settings > Packages within EelBlue and take a look at the Core Packages section.
+To get a sense for the files that are included with EelBlue, you can go to EelBlue Core's default branch on the GitHub page and take a look around.
 
-Here is a list of some:
-* EelBlue/EelBlue - Eelblue Core! The core is responsible for model reccomendation, ml architecture tools, and more.
-* epm - the epm command line tool (EelBlue Package Manager). You should use this repository for any contributions related to the epm tool and for publishing packages.
-* EelBlue.com - the repository for feedback on the [EelBlue.com website](EelBlue.com) and the EelBlue.com package API used by epm.
-
-
-
-### EelBlue Design Decisions
-
-When we make a significant decision in how we maintain the project and what we can or cannot support, we will document it in the EelBlue/design-decisions repository. If you have a question around how we do things, check to see if it is documented there. 
 
 ## How Can I Contribute?
 
-### Reporting Bugs
+When suggesting changes, please include as many details as possible. 
+EelBlue Core's default branch is intentionally a stable release, so that anyone downloading the code and compiling it gets a stable release. Active development occurs on branches named after the version they are targeting, for example the 1.0.0 branch is named `1.0.0-dev.` When raising PRs, please raise against the relevant development branch and __not__ against the `master` branch
+
+The codebase is maintained using the "contributor workflow" where everyone without exception contributes patch proposals using "pull requests". This facilitates social contribution, easy testing and peer review.
+
+To contribute a patch, the workflow is as follows:
+
+* Fork the repository in GitHub, and clone it your development machine.
+* Create a topic branch from the relevant development branch.
+* Commit changes to the branch.
+* Test your changes, which must include the unit and RPC tests passing.
+* Push topic branch to your copy of the repository.
+* Raise a Pull Request via GitHub.
+
+Commit messages should be verbose by default consisting of a short subject line (50 chars max), a blank line and detailed explanatory text as separate paragraph(s); unless the title alone is self-explanatory (like "Corrected typo in init.cpp") then a single title line is sufficient. Commit messages should be helpful to people reading your code in the future, so explain the reasoning for your decisions. 
+
+Please refer to the [Git manual](https://git-scm.com/doc) for more information about Git.
+
+The body of the pull request should contain enough description about what the patch does together with any justification/reasoning. You should include references to any discussions (for example other tickets or mailing list discussions). At this stage one should expect comments and review from other contributors. You can add more commits to your pull request by committing them locally and pushing to your fork until you have satisfied feedback.
+
+If your pull request is accepted for merging, you may be asked by a maintainer to squash and or rebase your commits before it will be merged.
+
+Please refrain from creating several pull requests for the same change. Use the pull request that is already open (or was created earlier) to amend changes. This preserves the discussion and review that happened earlier for the respective change set.
+
+The length of time required for peer review is unpredictable and will vary between pull requests.
+
+## Pull Request Philosophy
+
+Pull Requests should always be focused. For example, a pull request could add a feature, fix a bug, or refactor code; but not a mixture. Please avoid submitting pull requests that attempt to do too much, are overly large, or overly complex as this makes review difficult.
+
+### Features
+
+When adding a new feature, thought must be given to the long term technical debt and maintenance that feature may require after inclusion. Before proposing a new feature that will require maintenance, please consider if you are willing to maintain it (including bug fixing). If features get orphaned with no maintainer in the future, they may be removed.
+
+## "Decision Making" Process
+
+Whether a pull request is merged into EelBlue Core rests with the repository maintainers.
+
+Maintainers will take into consideration if a patch is in line with the general principles of EelBlue; meets the minimum standards for inclusion; and will take into account the consensus among frequent contributors.
+
+In general, all pull requests must:
+
+* have a clear use case, fix a demonstrable bug or serve the greater good of EelBlue;
+* be peer reviewed;
+* have functional tests;
+* follow code style guidelines;
 
 
 
-### Suggesting Enhancements
+### Peer Review
 
-### Your First Code Contribution
+Anyone may participate in peer review which is expressed by comments in the pull request. Typically reviewers will review the code for obvious errors, as well as test out the patch set and opine on the technical merits of the patch. Repository maintainers take into account the peer review when determining if there is consensus to merge a pull request.
 
-### Pull Requests
+Maintainers reserve the right to weigh the opinions of peer reviewers using common sense judgement and also may weight based on meritocracy: Those that have demonstrated a deeper commitment and understanding towards EelBlue (over time) or have clear domain expertise may naturally have more weight, as one would expect in all walks of life.
+
+
+# Copyright
+By contributing to this repository, you agree to license your work under the [Apach-2.0 license](https://github.com/EelBlue/EelBlue/blob/main/License), unless specified otherwise. Any work contributed where you are not the original author must contain its license header with the original author(s) and source.
+
+
 
 ## Styleguides
+
+
 
 ### Git Commit Messages
 
