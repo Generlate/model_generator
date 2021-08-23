@@ -4,30 +4,30 @@
 
 ## Table of Contents  
 [Code of Conduct](#code-of-conduct)  
-What should I know before getting started?
+[What should I know before getting started?](#what-should-i-know-before-getting-started?)
 
-* EelBlue and Packages
-* EelBlue Design Decisions
+* [EelBlue and Packages](#eelblue-and-packages)
+* [EelBlue Design Decisions](#eelblue-design-decisions)
 
-How Can I Contribute?
+[How Can I Contribute?](#how-can-i-contribute?)
 
-* Reporting Bugs
-* Suggesting Enhancements
-* Your First Code Contribution
-* Pull Requests
+* [Reporting Bugs](#reporting-bugs)
+* [Suggesting Enhancements](#suggesting-enhancements)
+* [Your First Code Contribution](#your-first-code-contribution)
+* [Pull Requests](#pull-requests)
 
 
-Styleguides
+[Styleguides](#styleguides)
 
-* Git Commit Messages
-* JavaScript StyleGuide
-* CoffeeScript Styleguide
-* Specs Styleguide
-* Documentation Styleguide
+* [Git Commit Messages](#git-commit-messages)
+* [JavaScript StyleGuide](#javascript-styleguide)
+* [CoffeeScript Styleguide](#coffeescript-styleguide)
+* [Specs Styleguide](#specs-styleguide)
+* [Documentation Styleguide](#documentation-styleguide)
 
-Additional Notes
+[Additional Notes](#additional-notes)
 
-* Issues and Pull Request Labels
+* [Issues and Pull Request Labels](#issues-and-pull-request-labels)
 
 
 
