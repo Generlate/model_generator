@@ -3,7 +3,7 @@
 
 
 ## Table of Contents  
-Code of Conduct
+[Code of Conduct](#code-of-conduct)  
 What should I know before getting started?
 
 * EelBlue and Packages
