@@ -4,12 +4,12 @@
 
 ## Table of Contents  
 [Code of Conduct](#code-of-conduct)  
-[What should I know before getting started?](#what-should-i-know-before-getting-started?)
+[What should I know before getting started](#what-should-i-know-before-getting-started)
 
 * [EelBlue and Packages](#eelblue-and-packages)
 * [EelBlue Design Decisions](#eelblue-design-decisions)
 
-[How Can I Contribute?](#how-can-i-contribute?)
+[How Can I Contribute](#how-can-i-contribute)
 
 * [Reporting Bugs](#reporting-bugs)
 * [Suggesting Enhancements](#suggesting-enhancements)
