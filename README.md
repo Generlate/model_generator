@@ -34,11 +34,11 @@ We would like to have a proof of concept by 2023. This will probably include a b
 
 <https://linktr.ee/AustenCabret>
 
-[![icon](https://user-images.githubusercontent.com/85384584/130401686-9298ca76-0d3d-4525-9f53-05bab17d96f4.png)](https://issuu.com/home/published/02.20.2021_portfolio_cabret-austen)
-[![icon2](https://user-images.githubusercontent.com/85384584/130402057-9376bb20-5e19-4840-ae65-d491ffd37f39.png)](https://issuu.com/home/published/02.20.2021_portfolio_cabret-austen)
-[![icon3](https://user-images.githubusercontent.com/85384584/130402085-1cfe4834-7be6-4309-8c60-8578fb648925.png)](https://issuu.com/home/published/02.20.2021_portfolio_cabret-austen)
-[![icon4](https://user-images.githubusercontent.com/85384584/130402116-1a229e41-2a75-4893-b842-aab16f44aa74.png)](https://issuu.com/home/published/02.20.2021_portfolio_cabret-austen)
-[![icon5](https://user-images.githubusercontent.com/85384584/130402140-a5fea54d-4be6-434f-bb5b-40b8bda4c1e8.png)](https://issuu.com/home/published/02.20.2021_portfolio_cabret-austen)
+[![icon](https://user-images.githubusercontent.com/85384584/130401686-9298ca76-0d3d-4525-9f53-05bab17d96f4.png)](https://discord.gg/7ptePN8QAe)
+[![icon2](https://user-images.githubusercontent.com/85384584/130402057-9376bb20-5e19-4840-ae65-d491ffd37f39.png)](https://www.instagram.com/eelblueai/)
+[![icon3](https://user-images.githubusercontent.com/85384584/130402085-1cfe4834-7be6-4309-8c60-8578fb648925.png)](https://www.twitch.tv/eelblue)
+[![icon4](https://user-images.githubusercontent.com/85384584/130402116-1a229e41-2a75-4893-b842-aab16f44aa74.png)](https://twitter.com/EelBlueAI)
+[![icon5](https://user-images.githubusercontent.com/85384584/130402140-a5fea54d-4be6-434f-bb5b-40b8bda4c1e8.png)](https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ)
 
 
 
