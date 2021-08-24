@@ -14,7 +14,7 @@ This project and everyone participating in it is governed by the EelBlue [Code o
 
 ## What should I know before getting started?
 
-### EelBlue and Packages
+### EelBlue Structure
 
 To get a sense for the files that are included with EelBlue, you can go to EelBlue Core's default branch on the GitHub page and take a look around.
 
