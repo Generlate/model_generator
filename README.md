@@ -32,11 +32,11 @@ Roadmap at
 
 We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce editable models.
 
-<a href="https://www.twitch.tv/eelblue"><img src="https://user-images.githubusercontent.com/85384584/130402085-1cfe4834-7be6-4309-8c60-8578fb648925.png" width="135"/></a>
-<a href="https://discord.gg/7ptePN8QAe"><img src="https://user-images.githubusercontent.com/85384584/130401686-9298ca76-0d3d-4525-9f53-05bab17d96f4.png" width="135"/></a>
-<a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img src="https://user-images.githubusercontent.com/85384584/130402140-a5fea54d-4be6-434f-bb5b-40b8bda4c1e8.png" width="135"/></a>
-<a href="https://www.instagram.com/eelblueai/"><img src="https://user-images.githubusercontent.com/85384584/130402057-9376bb20-5e19-4840-ae65-d491ffd37f39.png" width="135"/></a>
-<a href="https://twitter.com/EelBlueAI"><img src="https://user-images.githubusercontent.com/85384584/130402116-1a229e41-2a75-4893-b842-aab16f44aa74.png" width="135"/></a>
+<a href="https://www.twitch.tv/eelblue"><img src="https://user-images.githubusercontent.com/85384584/130402085-1cfe4834-7be6-4309-8c60-8578fb648925.png" height="35"/></a>
+<a href="https://discord.gg/7ptePN8QAe"><img src="https://user-images.githubusercontent.com/85384584/130401686-9298ca76-0d3d-4525-9f53-05bab17d96f4.png" height="35"/></a>
+<a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img src="https://user-images.githubusercontent.com/85384584/130402140-a5fea54d-4be6-434f-bb5b-40b8bda4c1e8.png" height="35"/></a>
+<a href="https://www.instagram.com/eelblueai/"><img src="https://user-images.githubusercontent.com/85384584/130402057-9376bb20-5e19-4840-ae65-d491ffd37f39.png" height="35"/></a>
+<a href="https://twitter.com/EelBlueAI"><img src="https://user-images.githubusercontent.com/85384584/130402116-1a229e41-2a75-4893-b842-aab16f44aa74.png" height="35"/></a>
 
 
 
