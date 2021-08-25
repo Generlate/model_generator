@@ -28,7 +28,7 @@ The plan for EelBlue is to create an innovative tool that will automate the majo
 * visual scripting
 
 # Short Term Goals  
-Roadmap at   
+Roadmap at [eelblue.com](eelblue.com)  
 
 We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce editable models.
 
