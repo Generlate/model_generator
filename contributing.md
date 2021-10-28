@@ -1,28 +1,28 @@
-# Contributing to EelBlue
+# Contributing to Generlate
 
 Hey! :wave:      
 
 So - you want to contribute huh?...  
-Well, THANK YOU. EelBlue is making architectural design easier and any help is greatly appreciated!
+Well, THANK YOU. Generlate is making architectural design easier and any help is greatly appreciated!
   
 
 
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the EelBlue [Code of Conduct](https://github.com/EelBlue/EelBlue/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to austencabret@eelblue.com.
+This project and everyone participating in it is governed by the Generlate [Code of Conduct](https://github.com/Generlate/Generlate/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to austencabret@Generlate.com.
 
 ## What should I know before getting started?
 
-### EelBlue Structure
+### Generlate Structure
 
-To get a sense for the files that are included with EelBlue, you can go to EelBlue Core's default branch on the GitHub page and take a look around.
+To get a sense for the files that are included with Generlate, you can go to Generlate Core's default branch on the GitHub page and take a look around.
 
 
 ## How Can I Contribute?
 
 When suggesting changes, please include as many details as possible. 
-EelBlue Core's default branch is intentionally a stable release, so that anyone downloading the code and compiling it gets a stable release. Active development occurs on branches named after the version they are targeting, for example the 1.0.0 branch is named `1.0.0-dev.` When raising PRs, please raise against the relevant development branch and __not__ against the `master` branch
+Generlate Core's default branch is intentionally a stable release, so that anyone downloading the code and compiling it gets a stable release. Active development occurs on branches named after the version they are targeting, for example the 1.0.0 branch is named `1.0.0-dev.` When raising PRs, please raise against the relevant development branch and __not__ against the `master` branch
 
 The codebase is maintained using the "contributor workflow" where everyone without exception contributes patch proposals using "pull requests". This facilitates social contribution, easy testing and peer review.
 
@@ -57,13 +57,13 @@ When adding a new feature, thought must be given to the long term technical debt
 
 ## "Decision Making" Process
 
-Whether a pull request is merged into EelBlue Core rests with the repository maintainers.
+Whether a pull request is merged into Generlate Core rests with the repository maintainers.
 
-Maintainers will take into consideration if a patch is in line with the general principles of EelBlue; meets the minimum standards for inclusion; and will take into account the consensus among frequent contributors.
+Maintainers will take into consideration if a patch is in line with the general principles of Generlate; meets the minimum standards for inclusion; and will take into account the consensus among frequent contributors.
 
 In general, all pull requests must:
 
-* have a clear use case, fix a demonstrable bug or serve the greater good of EelBlue;
+* have a clear use case, fix a demonstrable bug or serve the greater good of Generlate;
 * be peer reviewed;
 * have functional tests;
 * follow code style guidelines;
@@ -74,11 +74,11 @@ In general, all pull requests must:
 
 Anyone may participate in peer review which is expressed by comments in the pull request. Typically reviewers will review the code for obvious errors, as well as test out the patch set and opine on the technical merits of the patch. Repository maintainers take into account the peer review when determining if there is consensus to merge a pull request.
 
-Maintainers reserve the right to weigh the opinions of peer reviewers using common sense judgement and also may weight based on meritocracy: Those that have demonstrated a deeper commitment and understanding towards EelBlue (over time) or have clear domain expertise may naturally have more weight, as one would expect in all walks of life.
+Maintainers reserve the right to weigh the opinions of peer reviewers using common sense judgement and also may weight based on meritocracy: Those that have demonstrated a deeper commitment and understanding towards Generlate (over time) or have clear domain expertise may naturally have more weight, as one would expect in all walks of life.
 
 
 # Copyright
-By contributing to this repository, you agree to license your work under the [Apach-2.0 license](https://github.com/EelBlue/EelBlue/blob/main/License), unless specified otherwise. Any work contributed where you are not the original author must contain its license header with the original author(s) and source.
+By contributing to this repository, you agree to license your work under the [Apach-2.0 license](https://github.com/Generlate/Generlate/blob/main/License), unless specified otherwise. Any work contributed where you are not the original author must contain its license header with the original author(s) and source.
 
 
 
