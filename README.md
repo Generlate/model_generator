@@ -32,11 +32,15 @@ Roadmap at [Generlate.com](generlate.com)
 
 We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce editable models.
 
-<a href="https://www.twitch.tv/Generlate"><img src="https://user-images.githubusercontent.com/85384584/130402085-1cfe4834-7be6-4309-8c60-8578fb648925.png" height="35"/></a>
-<a href="https://discord.gg/7ptePN8QAe"><img src="https://user-images.githubusercontent.com/85384584/130401686-9298ca76-0d3d-4525-9f53-05bab17d96f4.png" height="35"/></a>
-<a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img src="https://user-images.githubusercontent.com/85384584/130402140-a5fea54d-4be6-434f-bb5b-40b8bda4c1e8.png" height="35"/></a>
-<a href="https://www.instagram.com/Generlate/"><img src="https://user-images.githubusercontent.com/85384584/130402057-9376bb20-5e19-4840-ae65-d491ffd37f39.png" height="35"/></a>
-<a href="https://twitter.com/Generlate"><img src="https://user-images.githubusercontent.com/85384584/130402116-1a229e41-2a75-4893-b842-aab16f44aa74.png" height="35"/></a>
+<a href="https://www.twitch.tv/generlate"><img src="![Twitch](https://user-images.githubusercontent.com/85384584/139519680-656e0f3b-6076-4136-a8d4-69dc3af8a1f5.png)
+" height="35"/></a>
+<a href="https://discord.gg/7ptePN8QAe"><img src="![Discord](https://user-images.githubusercontent.com/85384584/139519691-f3bb8991-c9c1-464f-a74d-a9f56a946fb6.png)
+" height="35"/></a>
+<a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img src="![Youtube](https://user-images.githubusercontent.com/85384584/139519692-822026b4-e131-4f0d-ada0-c58bcc4aaeb0.png)
+" height="35"/></a>
+<a href="https://www.instagram.com/generlate3d/"><img src="![Instagram](https://user-images.githubusercontent.com/85384584/139519698-b1c47c57-aa68-4ab0-9f6d-088dda21f832.png)
+" height="35"/></a>
+<a href="https://twitter.com/Generlate"><img src="![Twitter](https://user-images.githubusercontent.com/85384584/139519705-b73aa180-56b7-41b6-8772-26f44a3d99a5.png)" height="35"/></a>
 
 
 
