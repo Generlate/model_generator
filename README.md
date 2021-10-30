@@ -32,17 +32,8 @@ Roadmap at [Generlate.com](generlate.com)
 
 We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce editable models.
 
-<a href="https://www.twitch.tv/generlate"><img src="![Twitch](https://user-images.githubusercontent.com/85384584/139519680-656e0f3b-6076-4136-a8d4-69dc3af8a1f5.png)
-" height="35"/></a>
-<a href="https://discord.gg/7ptePN8QAe"><img src="![Discord](https://user-images.githubusercontent.com/85384584/139519691-f3bb8991-c9c1-464f-a74d-a9f56a946fb6.png)
-" height="35"/></a>
-<a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img src="![Youtube](https://user-images.githubusercontent.com/85384584/139519692-822026b4-e131-4f0d-ada0-c58bcc4aaeb0.png)
-" height="35"/></a>
-<a href="https://www.instagram.com/generlate3d/"><img src="![Instagram](https://user-images.githubusercontent.com/85384584/139519698-b1c47c57-aa68-4ab0-9f6d-088dda21f832.png)
-" height="35"/></a>
-<a href="https://twitter.com/Generlate"><img src="![Twitter](https://user-images.githubusercontent.com/85384584/139519705-b73aa180-56b7-41b6-8772-26f44a3d99a5.png)" height="35"/></a>
-
-
-
-
-
+<a href="https://www.twitch.tv/generlate"><img src="https://user-images.githubusercontent.com/85384584/139519931-bff963b6-a1d8-40fd-82b5-99d97a690972.png" height="35"/></a>
+<a href="https://discord.gg/7ptePN8QAe"><img src="https://user-images.githubusercontent.com/85384584/139519932-bf7c3b6b-d03c-4b30-9ace-f232dffb1c7f.png" height="35"/></a>
+<a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img src="https://user-images.githubusercontent.com/85384584/139519938-fc99a675-4f2c-4ac4-84b0-37d4acf7cb0d.png" height="35"/></a>
+<a href="https://www.instagram.com/generlate3d/"><img src="https://user-images.githubusercontent.com/85384584/139519942-21d193a7-8a4c-451e-b23a-5eb4f918d602.png" height="35"/></a>
+<a href="https://twitter.com/Generlate"><img src="https://user-images.githubusercontent.com/85384584/139519945-0f8b052d-e4dd-47b5-a371-b51721ab5049.png" height="35"/></a>
