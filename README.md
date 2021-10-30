@@ -1,6 +1,10 @@
 <p align="center">
-  <img width="250" src="https://user-images.githubusercontent.com/85384584/129927770-c435b297-b794-4f83-9c1b-3c667d378583.png">
+  <img width="750" src="https://user-images.githubusercontent.com/85384584/139526804-b61ba67e-7da9-4f75-b087-930b4730d1ef.png">
 </p>  
+
+
+
+
 
  
 Generlate is a generative tool for architecture design, on windows.  
