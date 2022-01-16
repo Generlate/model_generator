@@ -36,7 +36,7 @@ Roadmap at [Generlate.com](generlate.com)
 
 We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce editable models.
 
-<a href="https://www.linkedin.com/company/generlate"><img src="https://user-images.githubusercontent.com/85384584/139521920-83bc4742-2277-46da-9fb3-74cfad1b07b2.png" height="35"/></a>
+<a href="https://www.linkedin.com/company/generlate"><img src="https://user-images.githubusercontent.com/85384584/149669335-ce24fffe-5bc8-4e62-bc9f-2d180a9e69ad.png"height="35"/></a>
 
 <a href="https://www.facebook.com/profile.php?id=100077387796286"><img align="left" src="https://user-images.githubusercontent.com/85384584/149669296-969f8048-da85-4466-b21c-51928a7c376d.png" height="35"/></a>
 <a href="https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ"><img align="left" src="https://user-images.githubusercontent.com/85384584/139521953-3d7231f5-b53d-497f-b221-1e4d7613df39.png" height="35"/></a>
