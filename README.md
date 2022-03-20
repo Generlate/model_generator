@@ -7,8 +7,8 @@
 
 
 
- 
-Generlate is a generative tool for architecture design, on windows.  
+
+Generlate is a tool that makes building generation easier for property developers and designers.
 
 ---
 # Getting Started  
