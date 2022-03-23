@@ -9,8 +9,9 @@ yellow = rgb(237,231,46)
 white = rgb(255,255,255) */
 
 /* navbar css */
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
 body {
-    font-family: genos;
+    font-family: Genos;
     background-color: black;
 }
 
@@ -60,7 +61,7 @@ body {
     display: inline-block;
 }
 .dropdown .dropbtn {
-    font-family: genos;
+    font-family: Genos;
     font-size: 24px;
     border: none;
     outline: none;
@@ -128,7 +129,7 @@ nav a {
 }
 
 .clear {
-    font-family: genos;
+    font-family: Genos;
     background-color: inherit;
     color: rgb(153, 153, 153);
     border-width: 0.5px;
@@ -137,7 +138,7 @@ nav a {
 }
 
 .yellow {
-    font-family: genos;
+    font-family: Genos;
     background-color: rgb(237, 231, 46);
     color: white;
     border-style: none;
@@ -162,7 +163,7 @@ nav a {
 
 /* article css */
 article {
-    font-family: genos;
+    font-family: Genos;
     color: rgb(255, 255, 255);
 }
 
