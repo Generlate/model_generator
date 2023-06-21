@@ -13,7 +13,7 @@ Generlate is a tool that makes building generation easier for property developer
 ---
 
 ## The Plan  
-The plan for Generlate is to create an innovative tool that will automate the majority of processes included in modern building design. Development of the application is published on Youtube at https://www.youtube.com/channel/UCQFeRy_NDvUsA0VmuJNBUYQ
+The plan for Generlate is to create an innovative tool that will automate the majority of processes included in modern building design. Development of the application is published on [Youtube](https://www.youtube.com/channel/UCnhilg6-o3JPzZuqPafSYxA)
 
 # Main Features To Come  
 * ML image generator
