@@ -1,6 +1,7 @@
 <p align="center">
-  <img width="750" src="https://user-images.githubusercontent.com/85384584/181403156-03e0fd11-b69a-4666-a6c8-9424b8ad3392.png">
+  <img width="750" src="https://github.com/Generlate/model_generator/assets/85384584/93659fd6-ed44-44f0-b9bb-8124e0fe1966">
 </p>  
+
 
 
 
