@@ -1,6 +1,13 @@
 import random
 import os
 
+def round_coordinates(vertices):
+    rounded_vertices = []
+    for vertex in vertices:
+        rounded_vertex = [round(coord, 2) for coord in vertex]
+        rounded_vertices.append(rounded_vertex)
+    return rounded_vertices
+
 def generate_box(width, height, depth, filename):
     vertices = [
         [-width/2, -height/2, -depth/2],  # Vertex 0
@@ -12,6 +19,8 @@ def generate_box(width, height, depth, filename):
         [width/2, height/2, depth/2],     # Vertex 6
         [-width/2, height/2, depth/2]     # Vertex 7
     ]
+
+    vertices = round_coordinates(vertices)
 
     faces = [
         [0, 1, 2, 3],  # Face 0
@@ -27,7 +36,7 @@ def generate_box(width, height, depth, filename):
         f.write(f'{len(vertices)} {len(faces)} 0\n')
 
         for vertex in vertices:
-            f.write(f'{vertex[0]} {vertex[1]} {vertex[2]}\n')
+            f.write(f'{vertex[0]:.2f} {vertex[1]:.2f} {vertex[2]:.2f}\n')
 
         for face in faces:
             f.write(f'{len(face)} {" ".join(map(str, face))}\n')
@@ -44,4 +53,4 @@ def generate_multiple_boxes(num_boxes):
 
 
 # Example usage
-generate_multiple_boxes(1000)
+generate_multiple_boxes(12)
