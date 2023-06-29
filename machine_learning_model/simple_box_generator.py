@@ -10,14 +10,14 @@ def round_coordinates(vertices):
 
 def generate_box(width, height, depth, filename):
     vertices = [
-        [-width/2, -height/2, -depth/2],  # Vertex 0
-        [width/2, -height/2, -depth/2],   # Vertex 1
-        [width/2, height/2, -depth/2],    # Vertex 2
-        [-width/2, height/2, -depth/2],   # Vertex 3
-        [-width/2, -height/2, depth/2],   # Vertex 4
-        [width/2, -height/2, depth/2],    # Vertex 5
-        [width/2, height/2, depth/2],     # Vertex 6
-        [-width/2, height/2, depth/2]     # Vertex 7
+        [-width, -height, -depth],  # Vertex 0
+        [width, -height, -depth],   # Vertex 1
+        [width, height, -depth],    # Vertex 2
+        [-width, height, -depth],   # Vertex 3
+        [-width, -height, depth],   # Vertex 4
+        [width, -height, depth],    # Vertex 5
+        [width, height, depth],     # Vertex 6
+        [-width, height, depth]     # Vertex 7
     ]
 
     vertices = round_coordinates(vertices)
@@ -53,4 +53,4 @@ def generate_multiple_boxes(num_boxes):
 
 
 # Example usage
-generate_multiple_boxes(12)
+generate_multiple_boxes(100)
