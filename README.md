@@ -9,27 +9,26 @@
 
 
 
-Generlate is a tool that makes building generation easier for property developers and designers.
+
 
 ---
 
-## The Plan  
-The plan for Generlate is to create an innovative tool that will automate the majority of processes included in modern building design. 
+## Directions  
+- Download the repository (unzip if you downloaded the zipped file)
+- navigate to model_generator/machine_learning_model/machine_learning_model.py
+- open in zsh/bash and run 'python3 machine_learning_model.py'
+- this should generate a box in a file titled "generated_box.off"
+- this box can be viewed on websites like https://3dviewer.net/
+- in model_generator/Datasets/AustensBoxes/ you can find the training and testing datasets. These are filled with boxes, generated from a simpler, box generating algorithm. 
+- 
 
-# Main Features To Come  
-* ML image generator
-* ML model generator
-* Trait optomizer
-* Object recognition
-* Metaverse Integration
-* Export to common architecture file types: .ai, .ps, .3dm, .dwg, etc.
-* Integrated libraries to replace field experts
-* visual scripting
-
-# Short Term Goals  
-Roadmap at [Generlate.com](generlate.com)  
-
-We would like to have a proof of concept by 2023. This will probably include a basic ML algorithm, which can produce 3d models.
+# Features To Come  
+* More supported file types (.obj, .usd, .fbx)
+* Faster generation speeds
+* Plugin to Omniverse UI
+* Generate more than just boxes
+* Text as input
+* Neural network improvements
 
 
 
