@@ -40,5 +40,3 @@ Testing_tensors_float32 = [tensor.to(torch.float32) for tensor in Testing_tensor
 
 # Combine tensors into a single tensor
 Testing_combined_tensor = torch.stack(Testing_tensors_float32, dim=0)
-
-print(Testing_tensors)
