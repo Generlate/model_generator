@@ -1,152 +1,73 @@
+import os
 import torch
 import torch.nn as nn
+import torch.optim as optim
+import numpy as np
 import matplotlib.pyplot as plt
-# import data_loader
-
+from torch.utils.data import Dataset
+import training_data_loader
+import testing_data_loader
 
 # Define the neural network architecture
-class SimpleFeedForwardNN(nn.Module):
+class NeuralNetwork(nn.Module):
     def __init__(self):
-        super(SimpleFeedForwardNN, self).__init__()
-        self.fullyconnected1 = nn.Linear(24, 24)  # Input layer: 24 features input, 24 features output
-        self.fullyconnected3 = nn.Linear(24, 24)  # Output layer: 24 features input, 24 features output
+        super(NeuralNetwork, self).__init__()
+        self.hidden1 = nn.Linear(60, 80)  # First hidden layer 
+        self.hidden2 = nn.Linear(80, 80)  # Second hidden layer 
+        self.hidden3 = nn.Linear(80, 80)  # Third hidden layer 
+        self.output = nn.Linear(80, 1)  # Output layer
 
-    def forward(self, a):
-        a = torch.relu(self.fullyconnected1(a))  # Apply ReLU activation to the first layer
-        a = self.fullyconnected3(a)              # Output layer, no activation function
-        return a
-
+    def forward(self, x):
+        x = torch.relu(self.hidden1(x))
+        x = torch.relu(self.hidden2(x))
+        x = torch.relu(self.hidden3(x))
+        x = self.output(x)
+        return x
 
 # Create an instance of the neural network
-model = SimpleFeedForwardNN()
+model = NeuralNetwork()
 
-# Create a sample batch of input objects
-input_batch = torch.tensor([[-3.29, -1.35, -1.41,
-                            3.29, -1.35, -1.41,
-                            3.29, 1.35, -1.41,
-                            -3.29, 1.35, -1.41,
-                            -3.29, -1.35, 1.41,
-                            3.29, -1.35, 1.41,
-                            3.29, 1.35, 1.41,
-                            -3.29, 1.35, 1.41],
-                            [-3.48, -4.01, -3.14,
-                            3.48, -4.01, -3.14,
-                            3.48, 4.01, -3.14,
-                            -3.48, 4.01, -3.14,
-                            -3.48, -4.01, 3.14,
-                            3.48, -4.01, 3.14,
-                            3.48, 4.01, 3.14,
-                            -3.48, 4.01, 3.14],
-                            [-4.87, -0.98, -4.72,
-                            4.87, -0.98, -4.72,
-                            4.87, 0.98, -4.72,
-                            -4.87, 0.98, -4.72,
-                            -4.87, -0.98, 4.72,
-                            4.87, -0.98, 4.72,
-                            4.87, 0.98, 4.72,
-                            -4.87, 0.98, 4.72],
-                            [-4.67, -1.58, -1.02,
-                            4.67, -1.58, -1.02,
-                            4.67, 1.58, -1.02,
-                            -4.67, 1.58, -1.02,
-                            -4.67, -1.58, 1.02,
-                            4.67, -1.58, 1.02,
-                            4.67, 1.58, 1.02,
-                            -4.67, 1.58, 1.02],
-                            [-4.91, -1.15, -3.53,
-                            4.91, -1.15, -3.53,
-                            4.91, 1.15, -3.53,
-                            -4.91, 1.15, -3.53,
-                            -4.91, -1.15, 3.53,
-                            4.91, -1.15, 3.53,
-                            4.91, 1.15, 3.53,
-                            -4.91, 1.15, 3.53],
-                            [-1.63, -3.94, -0.70,
-                            1.63, -3.94, -0.70,
-                            1.63, 3.94, -0.70,
-                            -1.63, 3.94, -0.70,
-                            -1.63, -3.94, 0.70,
-                            1.63, -3.94, 0.70,
-                            1.63, 3.94, 0.70,
-                            -1.63, 3.94, 0.70],
-                            [-3.86, -2.71, -0.66,
-                            3.86, -2.71, -0.66,
-                            3.86, 2.71, -0.66,
-                            -3.86, 2.71, -0.66,
-                            -3.86, -2.71, 0.66,
-                            3.86, -2.71, 0.66,
-                            3.86, 2.71, 0.66,
-                            -3.86, 2.71, 0.66],
-                            [-1.57, -2.21, -1.41,
-                            1.57, -2.21, -1.41,
-                            1.57, 2.21, -1.41,
-                            -1.57, 2.21, -1.41,
-                            -1.57, -2.21, 1.41,
-                            1.57, -2.21, 1.41,
-                            1.57, 2.21, 1.41,
-                            -1.57, 2.21, 1.41],
-                            [-4.71, -0.75, -0.87,
-                            4.71, -0.75, -0.87,
-                            4.71, 0.75, -0.87,
-                            -4.71, 0.75, -0.87,
-                            -4.71, -0.75, 0.87,
-                            4.71, -0.75, 0.87,
-                            4.71, 0.75, 0.87,
-                            -4.71, 0.75, 0.87],
-                            [-1.30, -1.79, -1.07,
-                            1.30, -1.79, -1.07,
-                            1.30, 1.79, -1.07,
-                            -1.30, 1.79, -1.07,
-                            -1.30, -1.79, 1.07,
-                            1.30, -1.79, 1.07,
-                            1.30, 1.79, 1.07,
-                            -1.30, 1.79, 1.07],
-                            [-4.63, -2.12, -1.04,
-                            4.63, -2.12, -1.04,
-                            4.63, 2.12, -1.04,
-                            -4.63, 2.12, -1.04,
-                            -4.63, -2.12, 1.04,
-                            4.63, -2.12, 1.04,
-                            4.63, 2.12, 1.04,
-                            -4.63, 2.12, 1.04],
-                            [-1.33, -3.21, -4.17,
-                            1.33, -3.21, -4.17,
-                            1.33, 3.21, -4.17,
-                            -1.33, 3.21, -4.17,
-                            -1.33, -3.21, 4.17,
-                            1.33, -3.21, 4.17,
-                            1.33, 3.21, 4.17,
-                            -1.33, 3.21, 4.17]])  # this is where the data loader puts batches
+# Define the loss function and optimizer
+criterion = nn.MSELoss()
+optimizer = optim.SGD(model.parameters(), lr=0.01)
+
+# Training loop 
+training_input = training_data_loader.Training_combined_tensor
+
+testing_data = testing_data_loader.Testing_combined_tensor
+print("Test Output:")
+print(testing_data)
 
 
-# Pass the input batch through the neural network
-output_object = model(input_batch)
+num_epochs = 3
+testing_data_iter = iter(testing_data)
+for epoch in range(num_epochs):
+    # Get the next testing data tensor
+    testing_data_tensor = next(testing_data_iter)
 
-# Aggregate the output across the sample dimension
-aggregated_output = torch.mean(output_object, dim=0, keepdim=True)
+    # Forward pass
+    output = model(training_input)
+    loss = criterion(output, testing_data_tensor)  # Using output as both the input and target for unsupervised learning
 
-# Print the output object
-print(aggregated_output)
+    # Print the loss every epoch
+    print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
 
-# Reformat aggregated_output to three arrays for x, y and z
-flattened_tensor = aggregated_output.flatten()
-array = flattened_tensor.tolist()
+array = output.detach().numpy().flatten()
 
 x_list = []
 for x in range(len(array)):
     if x % 3 == 0:
-        x_list.append(array[x])
+        x_list.append(array[x] * 20)
 
 y_list = []
 for y in range(len(array)):
     if y % 3 in [1]:
-        y_list.append(array[y])
+        y_list.append(array[y] * 20)
 
 z_list = []
 for z in range(len(array)):
     if z % 3 in [2]:
-        z_list.append(array[z])
-
+        z_list.append(array[z] * 20)
 
 # plot the .off
 fig = plt.figure()
@@ -154,7 +75,6 @@ ax = fig.add_subplot(111, projection='3d')
 
 # Plot the 3D coordinates
 ax.scatter(x_list, y_list, z_list)
-
 
 # Set labels for each axis
 ax.set_xlabel('X')
