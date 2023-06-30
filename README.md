@@ -29,6 +29,7 @@
 * Generate more than just boxes
 * Text as input
 * Neural network improvements
+* Easier execution
 
 
 
