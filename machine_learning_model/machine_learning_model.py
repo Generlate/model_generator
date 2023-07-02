@@ -2,19 +2,17 @@ import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
-import numpy as np
-import matplotlib.pyplot as plt
-from torch.utils.data import Dataset
 import training_data_loader
 import testing_data_loader
+
 
 # Define the neural network architecture
 class NeuralNetwork(nn.Module):
     def __init__(self):
         super(NeuralNetwork, self).__init__()
-        self.hidden1 = nn.Linear(60, 80)  # First hidden layer 
-        self.hidden2 = nn.Linear(80, 80)  # Second hidden layer 
-        self.hidden3 = nn.Linear(80, 80)  # Third hidden layer 
+        self.hidden1 = nn.Linear(60, 80)  # First hidden layer
+        self.hidden2 = nn.Linear(80, 80)  # Second hidden layer
+        self.hidden3 = nn.Linear(80, 80)  # Third hidden layer
         self.output = nn.Linear(80, 1)  # Output layer
 
     def forward(self, x):
@@ -24,6 +22,7 @@ class NeuralNetwork(nn.Module):
         x = self.output(x)
         return x
 
+
 # Create an instance of the neural network
 model = NeuralNetwork()
 
@@ -31,7 +30,7 @@ model = NeuralNetwork()
 criterion = nn.MSELoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01)
 
-# Training loop 
+# Training loop
 training_input = training_data_loader.Training_combined_tensor
 
 testing_data = testing_data_loader.Testing_combined_tensor
@@ -44,7 +43,8 @@ for epoch in range(num_epochs):
 
     # Forward pass
     output = model(training_input)
-    loss = criterion(output, testing_data_tensor)  # Using output as both the input and target for unsupervised learning
+    # Using output as both the input and target for unsupervised learning
+    loss = criterion(output, testing_data_tensor)
 
     # Print the loss every epoch
     # print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
@@ -68,7 +68,8 @@ additional_string = '''4 0 1 2 3
 
 formatted_array += additional_string
 
-file_path = "./generated_boxes/generated_box.off"  # Specify the base file path where you want to save the .off file
+# Specify the base file path where you want to save the .off file
+file_path = "./generated_boxes/generated_box.off"
 file_exists = os.path.exists(file_path)
 
 # Check if the file already exists
