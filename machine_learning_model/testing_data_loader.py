@@ -29,7 +29,7 @@ class CustomDataset(Dataset):
         reshaped_array = torch.tensor(flattened_list).reshape(-1, 1)
         return reshaped_array
 
-data_directory = '../Datasets/AustensBoxes/testing/'
+data_directory = './Datasets/AustensBoxes/testing/'
 num_files_to_load = 10  # Specify the number of files to load
 Testing_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
 

@@ -28,7 +28,7 @@ class CustomDataset(Dataset):
         formatted_lines = [list(map(round, map(float, line.split()))) for line in lines if line.strip()]
         return [val for sublist in formatted_lines for val in sublist]
 
-data_directory = '../Datasets/AustensBoxes/training/'
+data_directory = './Datasets/AustensBoxes/training/'
 num_files_to_load = 60  # Specify the number of files to load
 Training_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
 

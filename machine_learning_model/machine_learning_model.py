@@ -68,7 +68,7 @@ additional_string = '''4 0 1 2 3
 
 formatted_array += additional_string
 
-file_path = "generated_box.off"  # Specify the base file path where you want to save the .off file
+file_path = "./generated_boxes/generated_box.off"  # Specify the base file path where you want to save the .off file
 file_exists = os.path.exists(file_path)
 
 # Check if the file already exists
