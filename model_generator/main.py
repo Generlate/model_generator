@@ -2,73 +2,73 @@ import os
 import numpy
 import torch.nn as nn
 import torch.optim as optim
-import training_data_formatter
-import testing_data_formatter
-from neural_network import NeuralNetwork
+import utils.training_data_formatter
+import utils.testing_data_formatter
+from utils.neural_network import NeuralNetwork
 
 
 # Create an instance of the neural network
-model = NeuralNetwork()
+MODEL = NeuralNetwork()
 
 # Define the loss function and optimizer
-criterion = nn.MSELoss()
-optimizer = optim.SGD(model.parameters(), lr=0.01)
+CRITERION = nn.MSELoss()
+OPTIMIZER = optim.SGD(MODEL.parameters(), lr=0.01)
 
 # Training loop
-training_input = training_data_formatter.Training_combined_tensor
+TRAINING_INPUT = utils.training_data_formatter.TRAINING_COMBINED_TENSOR
 
-testing_data = testing_data_formatter.Testing_combined_tensor
+TESTING_DATA = utils.testing_data_formatter.TESTING_COMBINED_TENSOR
 
-num_epochs = 3
-testing_data_iter = iter(testing_data)
-for epoch in range(num_epochs):
+NUMBER_OF_EPOCHS = 3
+TESTING_DATA_ITERATOR = iter(TESTING_DATA)
+for EPOCH in range(NUMBER_OF_EPOCHS):
     # Get the next testing data tensor
-    testing_data_tensor = next(testing_data_iter)
+    TESTING_DATA_TENSOR = next(TESTING_DATA_ITERATOR)
 
     # Forward pass
-    output = model(training_input)
+    OUTPUT = MODEL(TRAINING_INPUT)
     # Using output as both the input and target for unsupervised learning
-    loss = criterion(output, testing_data_tensor)
+    LOSS = CRITERION(OUTPUT, TESTING_DATA_TENSOR)
 
     # Print the loss every epoch
     # print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
 
-array = output.detach().numpy().flatten()
+ARRAY = OUTPUT.detach().numpy().flatten()
 
 # format to .off
-formatted_array = 'OFF\n8 6 0\n'
-for i, value in enumerate(array):
-    formatted_array += str(value * 22) + ' '
+FORMATTED_ARRAY = 'OFF\n8 6 0\n'
+for i, VALUE in enumerate(ARRAY):
+    FORMATTED_ARRAY += str(VALUE * 22) + ' '
     if (i + 1) % 3 == 0:
-        formatted_array += '\n'
+        FORMATTED_ARRAY += '\n'
 
-additional_string = '''4 0 1 2 3
+ADDITIONAL_STRING = '''4 0 1 2 3
 4 1 5 6 2
 4 5 4 7 6
 4 4 0 3 7
 4 3 2 6 7
 4 4 5 1 0'''
 
-formatted_array += additional_string
+FORMATTED_ARRAY += ADDITIONAL_STRING
 
 # Specify the base file path where you want to save the .off file
 file_path = "./generated_boxes/generated_box.off"
-file_exists = os.path.exists(file_path)
+FILE_EXISTS = os.path.exists(file_path)
 
 # Check if the file already exists
-if file_exists:
+if FILE_EXISTS:
     # Find the next available file name by incrementing a counter
-    file_counter = 1
-    while file_exists:
-        file_name, file_extension = os.path.splitext(file_path)
-        incremented_file_path = f"{file_name}_{file_counter}{file_extension}"
-        file_exists = os.path.exists(incremented_file_path)
-        file_counter += 1
+    FILE_COUNTER = 1
+    while FILE_EXISTS:
+        FILE_NAME, FILE_EXTENSION = os.path.splitext(file_path)
+        INCREMENTED_FILE_PATH = f"{FILE_NAME}_{FILE_COUNTER}{FILE_EXTENSION}"
+        FILE_EXISTS = os.path.exists(INCREMENTED_FILE_PATH)
+        FILE_COUNTER += 1
 
-    file_path = incremented_file_path
+    file_path = INCREMENTED_FILE_PATH
 
 # Save the .off file
-with open(file_path, 'w') as file:
-    file.write(formatted_array)
+with open(file_path, 'w') as FILE:
+    FILE.write(FORMATTED_ARRAY)
 
 print("File generated successfully. Saved as:", file_path)
