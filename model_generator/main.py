@@ -1,27 +1,10 @@
 import os
-import torch
+import numpy
 import torch.nn as nn
 import torch.optim as optim
-import training_data_loader
-import testing_data_loader
-import numpy
-
-
-# Define the neural network architecture
-class NeuralNetwork(nn.Module):
-    def __init__(self):
-        super(NeuralNetwork, self).__init__()
-        self.hidden1 = nn.Linear(60, 80)  # First hidden layer
-        self.hidden2 = nn.Linear(80, 80)  # Second hidden layer
-        self.hidden3 = nn.Linear(80, 80)  # Third hidden layer
-        self.output = nn.Linear(80, 1)  # Output layer
-
-    def forward(self, x):
-        x = torch.relu(self.hidden1(x))
-        x = torch.relu(self.hidden2(x))
-        x = torch.relu(self.hidden3(x))
-        x = self.output(x)
-        return x
+import training_data_formatter
+import testing_data_formatter
+from neural_network import NeuralNetwork
 
 
 # Create an instance of the neural network
@@ -32,9 +15,9 @@ criterion = nn.MSELoss()
 optimizer = optim.SGD(model.parameters(), lr=0.01)
 
 # Training loop
-training_input = training_data_loader.Training_combined_tensor
+training_input = training_data_formatter.Training_combined_tensor
 
-testing_data = testing_data_loader.Testing_combined_tensor
+testing_data = testing_data_formatter.Testing_combined_tensor
 
 num_epochs = 3
 testing_data_iter = iter(testing_data)

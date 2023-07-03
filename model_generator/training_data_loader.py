@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import Dataset
 
 
-class CustomDataset(Dataset):
+class TrainingDataLoader(Dataset):
     def __init__(self, data_directory, num_files=None):
         # Sorted file paths with limit
         file_paths = [os.path.join(data_directory, file_name) for file_name in
@@ -32,21 +32,3 @@ class CustomDataset(Dataset):
         formatted_lines = [list(map(round, map(float, line.split())))
                            for line in lines if line.strip()]
         return [val for sublist in formatted_lines for val in sublist]
-
-
-data_directory = './datasets/austens_boxes/training/'
-num_files_to_load = 60  # Specify the number of files to load
-Training_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
-
-# Get numbers from dataset.file_contents and convert to tensor
-Training_number_lists = [torch.tensor([lst[index]
-                                       for lst in
-                                       Training_dataset.file_contents
-                                       if len(lst) > index])
-                         for index in range(24)]
-
-Training_number_lists_float32 = [tensor.to(torch.float32)
-                                 for tensor in Training_number_lists]
-
-# Combine number_lists into a single tensor
-Training_combined_tensor = torch.stack(Training_number_lists_float32, dim=0)

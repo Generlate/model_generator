@@ -3,7 +3,7 @@ import torch
 from torch.utils.data import Dataset
 
 
-class CustomDataset(Dataset):
+class TestingDataLoader(Dataset):
     def __init__(self, data_directory, num_files=None):
         # Sorted file names with limit
         file_names = sorted(os.listdir(data_directory))[:num_files]
@@ -35,14 +35,3 @@ class CustomDataset(Dataset):
                           for val in sublist]
         reshaped_array = torch.tensor(flattened_list).reshape(-1, 1)
         return reshaped_array
-
-
-data_directory = './datasets/austens_boxes/testing/'
-num_files_to_load = 10  # Specify the number of files to load
-Testing_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
-
-# Get tensors for each file
-Testing_tensors = [Testing_dataset[idx] for idx in range(len(Testing_dataset))]
-
-# Combine tensors into a single tensor
-Testing_combined_tensor = torch.stack(Testing_tensors, dim=0)
