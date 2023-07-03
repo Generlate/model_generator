@@ -36,7 +36,7 @@ class CustomDataset(Dataset):
         return reshaped_array
 
 
-data_directory = './Datasets/AustensBoxes/testing/'
+data_directory = './datasets/austens_boxes/testing/'
 num_files_to_load = 10  # Specify the number of files to load
 Testing_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
 

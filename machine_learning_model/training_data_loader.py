@@ -34,7 +34,7 @@ class CustomDataset(Dataset):
         return [val for sublist in formatted_lines for val in sublist]
 
 
-data_directory = './Datasets/AustensBoxes/training/'
+data_directory = './datasets/austens_boxes/training/'
 num_files_to_load = 60  # Specify the number of files to load
 Training_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
 
