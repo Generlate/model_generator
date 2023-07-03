@@ -16,7 +16,8 @@ class CustomDataset(Dataset):
     def __getitem__(self, idx):
         file_path = self.file_paths[idx]
         file_contents = self.load_file_contents(file_path)
-        return torch.tensor(file_contents)  # Return file contents as a tensor
+        # Return file contents as a tensor
+        return torch.tensor(file_contents, dtype=torch.float32)
 
     def load_file_contents(self, file_path):
         with open(file_path, 'r') as file:
@@ -43,8 +44,5 @@ Testing_dataset = CustomDataset(data_directory, num_files=num_files_to_load)
 # Get tensors for each file
 Testing_tensors = [Testing_dataset[idx] for idx in range(len(Testing_dataset))]
 
-Testing_tensors_float32 = [tensor.to(torch.float32)
-                           for tensor in Testing_tensors]
-
 # Combine tensors into a single tensor
-Testing_combined_tensor = torch.stack(Testing_tensors_float32, dim=0)
+Testing_combined_tensor = torch.stack(Testing_tensors, dim=0)

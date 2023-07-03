@@ -4,6 +4,7 @@ import torch.nn as nn
 import torch.optim as optim
 import training_data_loader
 import testing_data_loader
+import numpy
 
 
 # Define the neural network architecture
@@ -50,7 +51,6 @@ for epoch in range(num_epochs):
     # print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
 
 array = output.detach().numpy().flatten()
-
 
 # format to .off
 formatted_array = 'OFF\n8 6 0\n'
