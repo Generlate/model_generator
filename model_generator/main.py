@@ -14,25 +14,29 @@ MODEL = NeuralNetwork()
 CRITERION = nn.MSELoss()
 OPTIMIZER = optim.SGD(MODEL.parameters(), lr=0.01)
 
-# Training loop
+# Load the datasets
 TRAINING_INPUT = utils.training_data_formatter.TRAINING_COMBINED_TENSOR
+TESTING_INPUT = utils.testing_data_formatter.TESTING_COMBINED_TENSOR
 
-TESTING_DATA = utils.testing_data_formatter.TESTING_COMBINED_TENSOR
-
+# Set number of epochs. I found 3 to give the lowest loss score.
 NUMBER_OF_EPOCHS = 3
-TESTING_DATA_ITERATOR = iter(TESTING_DATA)
+TESTING_DATA_ITERATOR = iter(TESTING_INPUT)
+
+# Training loop
 for EPOCH in range(NUMBER_OF_EPOCHS):
     # Get the next testing data tensor
     TESTING_DATA_TENSOR = next(TESTING_DATA_ITERATOR)
 
-    # Forward pass
+    # generate box coordinates
     OUTPUT = MODEL(TRAINING_INPUT)
-    # Using output as both the input and target for unsupervised learning
+
+    # Compare the generated coordinates against the test coordinates.
     LOSS = CRITERION(OUTPUT, TESTING_DATA_TENSOR)
 
     # Print the loss every epoch
     # print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
 
+# list the generated coordinates
 ARRAY = OUTPUT.detach().numpy().flatten()
 
 # format to .off
@@ -51,11 +55,11 @@ ADDITIONAL_STRING = '''4 0 1 2 3
 
 FORMATTED_ARRAY += ADDITIONAL_STRING
 
-# Specify the base file path where you want to save the .off file
+# Specify where the .off file is saved.
 file_path = "./generated_boxes/generated_box.off"
-FILE_EXISTS = os.path.exists(file_path)
 
 # Check if the file already exists
+FILE_EXISTS = os.path.exists(file_path)
 if FILE_EXISTS:
     # Find the next available file name by incrementing a counter
     FILE_COUNTER = 1
