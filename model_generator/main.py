@@ -2,8 +2,7 @@ import os
 import numpy
 import torch.nn as nn
 import torch.optim as optim
-import utils.training_data_formatter
-import utils.testing_data_formatter
+import utils.data_formatter
 from utils.neural_network import NeuralNetwork
 
 
@@ -15,8 +14,8 @@ CRITERION = nn.MSELoss()
 OPTIMIZER = optim.SGD(MODEL.parameters(), lr=0.01)
 
 # Load the datasets
-TRAINING_INPUT = utils.training_data_formatter.TRAINING_COMBINED_TENSOR
-TESTING_INPUT = utils.testing_data_formatter.TESTING_COMBINED_TENSOR
+TRAINING_INPUT = utils.data_formatter.TRAINING_COMBINED_TENSOR
+TESTING_INPUT = utils.data_formatter.TESTING_COMBINED_TENSOR
 
 # Set number of epochs. I found 3 to give the lowest loss score.
 NUMBER_OF_EPOCHS = 3
