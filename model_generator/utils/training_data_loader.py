@@ -23,12 +23,12 @@ class TrainingDataLoader(Dataset):
             with open(file_path, 'r') as file:
                 lines = file.readlines()[2:10]
                 content = "".join(lines)
-                formatted_content = self.format_content(content)
-                file_contents.append(formatted_content)
+                organized_content = self.organize_content(content)
+                file_contents.append(organized_content)
         return file_contents
 
-    def format_content(self, content):
+    def organize_content(self, content):
         lines = content.split('\n')
-        formatted_lines = [list(map(round, map(float, line.split())))
+        organized_lines = [list(map(round, map(float, line.split())))
                            for line in lines if line.strip()]
-        return [val for sublist in formatted_lines for val in sublist]
+        return [val for sublist in organized_lines for val in sublist]
