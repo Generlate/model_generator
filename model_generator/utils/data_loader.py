@@ -5,7 +5,7 @@ from torch.utils.data import Dataset
 
 class TrainingDataLoader(Dataset):
     def __init__(self, training_data_directory, training_number_of_files):
-        # Sorted file paths with limit
+        # The sorted file paths limited to the number specified.
         file_paths = [os.path.join(training_data_directory, file_name) for file_name in
                       sorted(os.listdir(training_data_directory))][:training_number_of_files]
         self.file_contents = self.load_file_contents(file_paths)
@@ -14,7 +14,7 @@ class TrainingDataLoader(Dataset):
         return len(self.file_contents)
 
     def __getitem__(self, index):
-        # Return as a tensor
+        # Return as a tensor.
         return torch.tensor(self.file_contents[index])
 
     def load_file_contents(self, file_paths):
@@ -36,7 +36,7 @@ class TrainingDataLoader(Dataset):
 
 class TestingDataLoader(Dataset):
     def __init__(self, testing_data_directory, testing_number_of_files):
-        # Sorted file names with limit
+        # The sorted file paths limited to the number specified.
         file_names = sorted(os.listdir(testing_data_directory))[:testing_number_of_files]
         self.file_paths = [os.path.join(testing_data_directory, file_name)
                            for file_name in file_names]
@@ -47,7 +47,7 @@ class TestingDataLoader(Dataset):
     def __getitem__(self, index):
         file_path = self.file_paths[index]
         file_contents = self.load_file_contents(file_path)
-        # Return file contents as a tensor
+        # Return file contents as a tensor.
         return torch.tensor(file_contents, dtype=torch.float32)
 
     def load_file_contents(self, file_path):
