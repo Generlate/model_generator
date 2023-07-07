@@ -7,11 +7,11 @@ from utils.neural_network import NeuralNetwork
 
 
 # Create an instance of the neural network.
-MODEL = NeuralNetwork()
+model = NeuralNetwork()
 
 # Define the loss function and optimizer.
 CRITERION = nn.MSELoss()
-OPTIMIZER = optim.SGD(MODEL.parameters(), lr=0.01)
+OPTIMIZER = optim.SGD(model.parameters(), lr=0.01)
 
 # Load the datasets.
 TRAINING_INPUT = utils.data_formatter.TRAINING_COMBINED_TENSOR
@@ -27,13 +27,14 @@ for EPOCH in range(NUMBER_OF_EPOCHS):
     TESTING_DATA_TENSOR = next(TESTING_DATA_ITERATOR)
 
     # Generate box coordinates.
-    OUTPUT = MODEL(TRAINING_INPUT)
+    OUTPUT = model(TRAINING_INPUT)
 
     # Compare the generated coordinates against the test coordinates.
     LOSS = CRITERION(OUTPUT, TESTING_DATA_TENSOR)
 
     # Print the loss every epoch.
     # print(f"Epoch: {epoch+1}, Loss: {loss.item()}")
+
 
 # List the generated coordinates.
 ARRAY = OUTPUT.detach().numpy().flatten()
