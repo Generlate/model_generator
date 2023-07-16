@@ -21,6 +21,7 @@
 - Python3
 - Pytorch
 - Numpy
+- Omniverse
 
 ## Features To Come  
 * More supported file types (.obj, .usd, .fbx)
