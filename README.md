@@ -1,18 +1,3 @@
-<p align="center">
-  <img width="750" src="https://github.com/Generlate/model_generator/assets/85384584/93659fd6-ed44-44f0-b9bb-8124e0fe1966">
-</p>  
-
-
-
-
-
-
-
-
-
-
----
-
 ## Directions  
 - Create a virtual environment with the dependencies installed
 - Download the repository (unzip if you downloaded the zipped file)
@@ -23,6 +8,7 @@
 - in model_generator/Datasets/AustensBoxes/ you can find the training and testing datasets. These are filled with boxes, generated from a simpler, box generating algorithm.
 
 ## Dependencies
+- Python3
 - Pytorch
 - Numpy
 
@@ -37,3 +23,6 @@
 
 
 
+<p align="center">
+  <img width="750" src="https://github.com/Generlate/model_generator/assets/85384584/93659fd6-ed44-44f0-b9bb-8124e0fe1966">
+</p>  
