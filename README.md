@@ -7,7 +7,7 @@
 - Create a virtual environment with the dependencies installed
 - Download the repository (unzip if you downloaded the zipped file)
 - navigate to model_generator/machine_learning_model/machine_learning_model.py
-- open in zsh/bash and run ```python3 machine_learning_model.py```
+- open in zsh/bash and run ```python3 main.py```
 - this should generate a box in /model_generator/generated_boxes/ titled "generated_box.off"
 - this box can be viewed on websites like https://3dviewer.net/
 - in model_generator/Datasets/AustensBoxes/ you can find the training and testing datasets. These are filled with boxes, generated from a simpler, box generating algorithm.
