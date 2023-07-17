@@ -10,8 +10,9 @@
 - open in zsh/bash and run ```python3 main.py```
 - this should generate a box in /model_generator/generated_boxes/ titled "generated_box.off"
 - this box can be viewed on websites like https://3dviewer.net/
+ 
+![Screencast from 2023-07-17 06-24-45](https://github.com/Generlate/model_generator/assets/85384584/a3c493f3-cadf-4d56-b06f-7fe7a436927f)
 
-![Screencast-from-2023-07-17-06-24-45](https://github.com/Generlate/model_generator/assets/85384584/728abc24-734e-4d3b-8bf7-6984fd524066)
 
 - in model_generator/Datasets/AustensBoxes/ you can find the training and testing datasets. These are filled with boxes, generated from a simpler, box generating algorithm.
 
