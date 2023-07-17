@@ -1,5 +1,5 @@
 ## Directions  
-### For the Model Generator
+#### For the Model Generator
 - Create a virtual environment with the dependencies installed
 - Download the repository (unzip if you downloaded the zipped file)
 - navigate to model_generator/machine_learning_model/machine_learning_model.py
@@ -8,7 +8,7 @@
 - this box can be viewed on websites like https://3dviewer.net/
 - in model_generator/Datasets/AustensBoxes/ you can find the training and testing datasets. These are filled with boxes, generated from a simpler, box generating algorithm.
 
-### For the Omniverse Plugin
+#### For the Omniverse Plugin
 - Sign up to Nvidia's Omniverse programs https://www.nvidia.com/en-us/omniverse/download/
 - install Omniverse Code through the Omniverse Launcher
 - (In Omniverse Code) click on the extensions tab
