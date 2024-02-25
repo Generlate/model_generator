@@ -37,7 +37,8 @@ class TrainingDataLoader(Dataset):
 class TestingDataLoader(Dataset):
     def __init__(self, testing_data_directory, testing_number_of_files):
         # The sorted file paths limited to the number specified.
-        file_names = sorted(os.listdir(testing_data_directory))[:testing_number_of_files]
+        file_names = sorted(os.listdir(testing_data_directory))[
+            :testing_number_of_files]
         self.file_paths = [os.path.join(testing_data_directory, file_name)
                            for file_name in file_names]
 

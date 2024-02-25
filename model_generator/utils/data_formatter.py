@@ -9,8 +9,10 @@ training_number_of_files = 60
 testing_number_of_files = 10
 
 # Apply the class that loads and formats the box data.
-TRAINING_DATASET = TrainingDataLoader(training_data_directory, training_number_of_files)
-TESTING_DATASET = TestingDataLoader(testing_data_directory, testing_number_of_files)
+TRAINING_DATASET = TrainingDataLoader(
+    training_data_directory, training_number_of_files)
+TESTING_DATASET = TestingDataLoader(
+    testing_data_directory, testing_number_of_files)
 
 
 # Get numbers from the files and convert to tensor.

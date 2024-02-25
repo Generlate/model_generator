@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import numpy
 import torch.nn as nn
