@@ -42,18 +42,18 @@ for EPOCH in range(NUMBER_OF_EPOCHS):
 ARRAY = OUTPUT.detach().numpy().flatten()
 
 # Format to .off.
-FORMATTED_ARRAY = 'OFF\n8 6 0\n'
+FORMATTED_ARRAY = "OFF\n8 6 0\n"
 for i, VALUE in enumerate(ARRAY):
-    FORMATTED_ARRAY += str(VALUE * 22) + ' '
+    FORMATTED_ARRAY += str(VALUE * 22) + " "
     if (i + 1) % 3 == 0:
-        FORMATTED_ARRAY += '\n'
+        FORMATTED_ARRAY += "\n"
 
-ADDITIONAL_STRING = '''4 0 1 2 3
+ADDITIONAL_STRING = """4 0 1 2 3
 4 1 5 6 2
 4 5 4 7 6
 4 4 0 3 7
 4 3 2 6 7
-4 4 5 1 0'''
+4 4 5 1 0"""
 
 FORMATTED_ARRAY += ADDITIONAL_STRING
 
@@ -74,7 +74,7 @@ if FILE_EXISTS:
     file_path = INCREMENTED_FILE_PATH
 
 # Save the .off file.
-with open(file_path, 'w') as FILE:
+with open(file_path, "w") as FILE:
     FILE.write(FORMATTED_ARRAY)
 
 print("File generated successfully. Saved as:", file_path)

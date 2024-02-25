@@ -44,5 +44,4 @@ def generate_multiple_boxes(num_boxes):
               f'exported to {filename}.')
 
 
-# Generate boxes
 generate_multiple_boxes(100)
