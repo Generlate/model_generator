@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+""" Runs a formatted dataset through a neural network, formats the output to be viewed as a 3d object and file name."""
+
 import os
 import numpy
 import torch.nn as nn
@@ -57,7 +59,6 @@ ADDITIONAL_STRING = """4 0 1 2 3
 
 FORMATTED_ARRAY += ADDITIONAL_STRING
 
-# Specify where the .off file is saved.
 file_path = "./generated_boxes/generated_box.off"
 
 # Check if the file already exists.

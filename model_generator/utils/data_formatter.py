@@ -1,3 +1,5 @@
+""" Formats the dataset to the proper format for the neural network to process. """
+
 import torch
 from utils.data_loader import TrainingDataLoader, TestingDataLoader
 
