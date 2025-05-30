@@ -52,7 +52,6 @@ class TestingDataLoader(Dataset):
 
     def __init__(self, testing_data_directory, testing_number_of_files):
         """To fill."""
-        # The sorted file paths limited to the number specified.
         file_names = sorted(os.listdir(testing_data_directory))[
             :testing_number_of_files
         ]

@@ -3,10 +3,10 @@
 """ Runs a formatted dataset through a neural network, formats the output to be viewed as a 3d object and file name."""
 
 import os
-import numpy
 import torch.nn as nn
 import torch.optim as optim
 import utils.data_formatter
+import utils.data_loader
 from utils.neural_network import NeuralNetwork
 
 if __name__ == "__main__":
@@ -80,3 +80,6 @@ if __name__ == "__main__":
         FILE.write(FORMATTED_ARRAY)
 
     print("File generated successfully. Saved as:", file_path)
+
+# todo: add docs with Sphinx
+# todo: add a --version, --help and cli_args function
