@@ -1,4 +1,4 @@
-""" Takes in tensors and returns new tensors."""
+"""Takes in tensors and returns new tensors."""
 
 import torch
 import torch.nn as nn
@@ -8,7 +8,7 @@ import torch.nn as nn
 class NeuralNetwork(nn.Module):
     """Calls Pytorch functions to process a tensor through a neural network."""
 
-    def __init__(self):
+    def __init__(self) -> None:
         """Initializes a Neural network with three hidden layers."""
         super(NeuralNetwork, self).__init__()
         self.hidden1 = nn.Linear(60, 80)
@@ -16,7 +16,7 @@ class NeuralNetwork(nn.Module):
         self.hidden3 = nn.Linear(80, 80)
         self.output = nn.Linear(80, 1)
 
-    def forward(self, x):
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
         """Applies a relu activation function."""
         x = torch.relu(self.hidden1(x))
         x = torch.relu(self.hidden2(x))
