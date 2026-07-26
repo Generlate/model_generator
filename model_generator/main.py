@@ -30,7 +30,7 @@ if __name__ == "__main__":
     NUMBER_OF_EPOCHS: int = 3
     TESTING_DATA_ITERATOR: Iterator[torch.Tensor] = iter(TESTING_INPUT)
 
-    # The training loop.
+    # Training loop.
     for EPOCH in range(NUMBER_OF_EPOCHS):
         # Get the next testing data tensor.
         TESTING_DATA_TENSOR = next(TESTING_DATA_ITERATOR)
@@ -86,5 +86,5 @@ if __name__ == "__main__":
 
     print("File generated successfully. Saved as:", file_path)
 
-# todo: add docs with Sphinx
-# todo: add a --version, --help and cli_args function
+# TODO: add docs with Sphinx
+# TODO: add a --version, --help and cli_args function
